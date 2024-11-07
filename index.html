@@ -36,18 +36,6 @@
 
 
 
-        // write a function to create a latin square of length 16
-        function latinSquare(length) {
-            var square = [];
-            for (var i = 0; i < length; i++) {
-                square[i] = [];
-                for (var j = 0; j < length; j++) {
-                    square[i][j] = (i + j) % length;
-                }
-            }
-            return square;
-        }
-
 
         async function createExperiment() {
 
@@ -55,16 +43,12 @@
             var timeline = [];
 
 
-
-
-
-
             const subject_id = jsPsych.randomization.randomID(10);
 
             const filename = `${subject_id}.csv`;
 
-            //const condition_num = await jsPsychPipe.getCondition("V7FW1gwxGHQz");
-            const condition_num = 0;
+            const condition_num = await jsPsychPipe.getCondition("vl24Bq6ZoMZm");
+            // const condition_num = 0;
 
             scales = scale_list[condition_num];
             // Set background color to gray //
@@ -77,7 +61,7 @@
             // var image_paths = Object.values(maps);
             // append the string 'patches71.png' to the list
             // image_paths.push('maps_anchoring.png');
-         
+
             jsPsych.data.addProperties({
                 subject_id: subject_id,
                 condition_num: condition_num
@@ -166,7 +150,7 @@
                 button_label: "Done",
                 randomize_question_order: false
             }
-          
+
 
             var instructions = {
                 // type: jsPsychHtmlButtonResponse,
@@ -221,7 +205,6 @@
                 response_ends_trial: false,
                 include_button: true,
                 data: {
-                    image_path: 'maps_anchoring.png',
                     practiceTrial: true,
                 },
                 slider_width: 500
@@ -552,7 +535,7 @@
             const save_data = {
                 type: jsPsychPipe,
                 action: "save",
-                experiment_id: "V7FW1gwxGHQz",
+                experiment_id: "vl24Bq6ZoMZm",
                 filename: filename,
                 data_string: () => jsPsych.data.get().csv()
             };

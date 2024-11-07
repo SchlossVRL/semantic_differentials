@@ -435,14 +435,14 @@
                     '<p> Thank you for participating! You may now close this window../p></div>',
                 choices: ['NO_KEYS']
             }
-
-            timeline.push(debrief_script);
-
             timeline.push({
                 type: jsPsychFullscreen,
                 fullscreen_mode: false,
             })
 
+            timeline.push(debrief_script);
+
+           
 
             jsPsych.run(timeline);
         }

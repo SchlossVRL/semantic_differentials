@@ -78,10 +78,10 @@
             }
             timeline.push(initial_screen);
 
-            // timeline.push({
-            //     type: jsPsychFullscreen,
-            //     fullscreen_mode: true,
-            // })
+            timeline.push({
+                type: jsPsychFullscreen,
+                fullscreen_mode: true,
+            })
 
             var consentSign = {
                 type: jsPsychSurveyMultiSelect,
@@ -546,8 +546,8 @@
             var debrief_script = {
                 type: jsPsychHtmlKeyboardResponse,
                 stimulus: '<div style="width:800px">Great job! You have finished the experiment.' +
-                    '<p> The goal of this experiment is to determine what factors influence the associations between emotions and maps <br>' +
-                    '<p> Others who participate in this study may have been shown different maps than the ones you did.\
+                    '<p> The goal of this experiment is to determine the organization of concepts in the human mind.<br>' +
+                    '<p> Others who participate in this study may have been shown different scales than the ones you were.\
                         Please do not inform other potential participants of the hypotheses in our experiment' +
                     '<p> Credit for your participation will be appear on SONA in the next few days.' +
                     '<p> Thank you for participating! You may now close this window../p></div>',

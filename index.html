@@ -156,44 +156,42 @@
                 // type: jsPsychHtmlButtonResponse,
                 type: jsPsychHtmlSliderResponse,
                 stimulus: `
-                            <div style="height:820px">
+                        <div style="height:670px;">
                             <div style='text-align:left; font-size:20px; line-height:25px; width: 1400px;'>
-                                During this experiment you will be asked to rate concepts on different scales. Below, you can see some examples of the scales you will be asked to rate concepts on as well \
-                                as the concepts you will be asked to rate. For example, you might be asked to rate how much you associate the concept "${concept_list[0]}" on a scale from\
-                                 ${scales[0].split('vs.')[0]} to ${scales[0].split('vs.')[1]}.
-                                <br><br>
-                    Please look at the list of scales and concepts. For each scale, think about the concept you would associate most with either end point of the scale.\
-                    For example, for the ${scales[0]} scale, think about which concept you associate most with ${scales[0].split(' vs. ')[0]}. When you see that concept presented with that scale during the experiment, please rate the concept near the ${scales[0].split('vs.')[0]} endpoint of the scale. <br> \
-                    Now, repeat this for both endpoints for all the scales you see on the screen.<br>
-                    Please use the full range of the scale. That is, if you believe a concept is somewhat associated with both endpoints, you would
-                    click at the midpoint of the scale.\
-                    You will be asked to rate each concept for a given scale before moving on to the next.<br><br>
-                    Press the 'Continue' button for instructions on how to use the slider.\
-                    <br><br>
-                </div>
+                                During this experiment you will be presented with a series of concepts, one at a time, from the set below: \
+                            </div>
 
-                <div style="width: 1500px; margin: 0 auto;">
-                    <!-- Centered text paragraphs -->
-                    <div style="text-align: center; width: 1500px; ">
-                        <p style="font-size:25px; line-height:18px; font-weight:bold">Scales:</p>
-                        <p style="font-size:25px; line-height:18px; ">${scales[0]}</p>
-                        <p style="font-size:25px; line-height:18px; ">${scales[1]}</p>
-                        <p style="font-size:25px;line-height:18px;">${scales[2]}</p>
-                        <p style="font-size:25px;line-height:18px; ">${scales[3]}</p>
-                        <p style="font-size:25px;line-height:18px; ">${scales[4]}</p>
-                        <p style="font-size:25px;line-height:22px;">${scales[5]}</p>
-    
-                    </div>
-                
-                    <div style="text-align: center; width: 1500px;">
-                        <p style="font-size:25px; line-height:22px; font-weight:bold ">Concepts:</p>
-                        <p style="font-size:22px; line-height:20px;">${concept_list[0]}, ${concept_list[1]}, ${concept_list[2]}, ${concept_list[3]}, ${concept_list[4]} | ${concept_list[5]}, ${concept_list[6]}, ${concept_list[7]} ${concept_list[8]}, ${concept_list[9]} | ${concept_list[10]}, ${concept_list[11]}, ${concept_list[12]}, ${concept_list[13]}, ${concept_list[14]} </p>
-                        <p style="font-size:22px; line-height:20px;">${concept_list[15]}, ${concept_list[16]}, ${concept_list[17]}, ${concept_list[18]}, ${concept_list[19]} | ${concept_list[20]}, ${concept_list[21]}, ${concept_list[22]}, ${concept_list[23]}, ${concept_list[24]} |${concept_list[25]}, ${concept_list[26]}, ${concept_list[27]}, ${concept_list[28]}, ${concept_list[29]}</p>
-                        <p style="font-size:22px; line-height:18px;"></p>
+                            <div style="text-align: left; width: 1500px;">
+                                <p style="font-size:25px; line-height:20px;">${concept_list[0]}, ${concept_list[1]}, ${concept_list[2]}, ${concept_list[3]}, ${concept_list[4]}, ${concept_list[5]}, ${concept_list[6]}, ${concept_list[7]} ${concept_list[8]}, ${concept_list[9]}, ${concept_list[10]}, ${concept_list[11]}, ${concept_list[12]}, ${concept_list[13]}, ${concept_list[14]} </p>
+                                <p style="font-size:25px; line-height:20px;">${concept_list[15]}, ${concept_list[16]}, ${concept_list[17]}, ${concept_list[18]}, ${concept_list[19]}, ${concept_list[20]}, ${concept_list[21]}, ${concept_list[22]}, ${concept_list[23]}, ${concept_list[24]}, ${concept_list[25]}, ${concept_list[26]}, ${concept_list[27]}, ${concept_list[28]}, ${concept_list[29]}</p>
+                                <p style="font-size:22px; line-height:18px;"></p>
+                            </div>
+                            <div style='text-align:left; font-size:20px; line-height:25px; width: 1400px;'>
+                                For each concept, you will be asked to rate where you think it falls on each of the response scales with the following endpoints:
+                            </div>
+                            <div style="text-align: center; width: 1400px; ">
+                                <p style="font-size:25px; line-height:18px; ">${scales[0]}</p>
+                                <p style="font-size:25px; line-height:18px; ">${scales[1]}</p>
+                                <p style="font-size:25px;line-height:18px;">${scales[2]}</p>
+                                <p style="font-size:25px;line-height:18px; ">${scales[3]}</p>
+                                <p style="font-size:25px;line-height:18px; ">${scales[4]}</p>
+                                <p style="font-size:25px;line-height:22px;">${scales[5]}</p>
+                            </div>
+                            <div style='text-align:left; font-size:20px; line-height:25px; width: 1400px;'>
+                                Each trial will include one concept word and one response scale. You will be asked to make your rating by sliding the cursor along a slider response scale.\
+                                Before beginning, please look at the list of concepts and scales. \
+                                For each scale, think about the concept you associate most with the left endpoint.\
+                                When you see that concept for that response scale, please click near the left of the scale.\
+                                Now, please think about the concept you associate most with the right endpoint of each scale.\ 
+                                When you see that concept for that response scale, please click near the right of the scale.\ 
+                                Please use the full range of the scale.\
+                                That is, if you believe a concept is somewhat associated with both endpoints, you would click at the midpoint of the scale.\
+                                You will be asked to rate each concept for a given scale before moving on to the next.<br>Press the 'Continue' button for instructions on how to use the slider.
 
-    
-                    </div>
-                </div>
+                            </div>
+                                <!-- Centered text paragraphs -->
+                            
+                        </div>
                             `,
                 // choices: ['Continue']
                 labels: ['', ''],
@@ -375,6 +373,8 @@
                         response_ends_trial: true,
                         post_trial_gap: 500,
                         data: {
+                            scale: this_scale,
+                            concept: this_concept,
                             // image_path: this_map,
                             // concept: concept,
                             // repetition: repetition,
@@ -442,7 +442,7 @@
 
             timeline.push(debrief_script);
 
-           
+
 
             jsPsych.run(timeline);
         }

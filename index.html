@@ -42,7 +42,10 @@
             var jsPsych = initJsPsych();
             var timeline = [];
 
+            //get the SONA id from the url
 
+
+            const sona_id =jsPsych.data.getURLVariable().id;
             const subject_id = jsPsych.randomization.randomID(10);
 
             const filename = `${subject_id}.csv`;
@@ -64,7 +67,8 @@
 
             jsPsych.data.addProperties({
                 subject_id: subject_id,
-                condition_num: condition_num
+                condition_num: condition_num,
+                sona_id: sona_id
             });
 
             // Initial welcome screen

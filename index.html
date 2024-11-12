@@ -45,7 +45,7 @@
             //get the SONA id from the url
 
 
-            const sona_id =jsPsych.data.getURLVariable('id');
+            const sona_id = jsPsych.data.getURLVariable('id');
             const subject_id = jsPsych.randomization.randomID(10);
 
             const filename = `${subject_id}.csv`;
@@ -161,14 +161,16 @@
                 // type: jsPsychHtmlButtonResponse,
                 type: jsPsychHtmlSliderResponse,
                 stimulus: `
-                        <div style="height:670px;">
+                        <div style="height:680px;">
                             <div style='text-align:left; font-size:20px; line-height:25px; width: 1400px;'>
                                 During this experiment you will be presented with a series of concepts, one at a time, from the set below: \
                             </div>
 
-                            <div style="text-align: left; width: 1500px;">
-                                <p style="font-size:25px; line-height:20px;">${concept_list[0]}, ${concept_list[1]}, ${concept_list[2]}, ${concept_list[3]}, ${concept_list[4]}, ${concept_list[5]}, ${concept_list[6]}, ${concept_list[7]} ${concept_list[8]}, ${concept_list[9]}, ${concept_list[10]}, ${concept_list[11]}, ${concept_list[12]}, ${concept_list[13]}, ${concept_list[14]} </p>
-                                <p style="font-size:25px; line-height:20px;">${concept_list[15]}, ${concept_list[16]}, ${concept_list[17]}, ${concept_list[18]}, ${concept_list[19]}, ${concept_list[20]}, ${concept_list[21]}, ${concept_list[22]}, ${concept_list[23]}, ${concept_list[24]}, ${concept_list[25]}, ${concept_list[26]}, ${concept_list[27]}, ${concept_list[28]}, ${concept_list[29]}</p>
+                           <div style="text-align: left; width: 1500px;">
+                                <p style="font-size:20px; line-height:20px;">${concept_list[0]}, ${concept_list[1]}, ${concept_list[2]}, ${concept_list[3]}, ${concept_list[4]}, ${concept_list[5]}, ${concept_list[6]}, ${concept_list[7]}, ${concept_list[8]}, ${concept_list[9]}, ${concept_list[10]}</p>
+                                <p style="font-size:20px; line-height:20px;">${concept_list[11]}, ${concept_list[12]}, ${concept_list[13]}, ${concept_list[14]}, ${concept_list[15]}, ${concept_list[16]}, ${concept_list[17]}, ${concept_list[18]}, ${concept_list[19]}, ${concept_list[20]}</p>
+                                <p style="font-size:20px; line-height:20px;">${concept_list[21]}, ${concept_list[22]}, ${concept_list[23]}, ${concept_list[24]}, ${concept_list[25]}, ${concept_list[26]}, ${concept_list[27]}, ${concept_list[28]}, ${concept_list[29]}, ${concept_list[30]}</p>
+                                <p style="font-size:20px; line-height:20px;">${concept_list[31]}, ${concept_list[32]}, ${concept_list[33]}, ${concept_list[34]}, ${concept_list[35]}, ${concept_list[36]}, ${concept_list[37]}, ${concept_list[38]}, ${concept_list[39]}, ${concept_list[40]}</p>
                                 <p style="font-size:22px; line-height:18px;"></p>
                             </div>
                             <div style='text-align:left; font-size:20px; line-height:25px; width: 1400px;'>
@@ -224,8 +226,8 @@
             var slider_instructions = {
                 type: jsPsychHtmlButtonResponse,
                 stimulus: `<div style="width:800px;"><p style="text-align:left">To move the slider, click and drag your cursor to the location of the scale where you would like to make your rating and then let go. When you let go of the slider, your response will be recorded and the next trial will begin. <br>
-                    We are interested in your initial impressions of each map for the given concept, so please go with your first intuition. <br>
-                    Before you begin the experiment, there will be four training trials for you to practice using the scale. <br>
+                    We are interested in your initial impressions of each concept for a given scale, so please go with your first intuition. <br>
+                    Before you begin the experiment, there will be four training trials for you to practice using the slider. <br>
                      When you are ready to start the training trials, please click "Continue".</p><br></div>`,
                 choices: ['Continue']
             }

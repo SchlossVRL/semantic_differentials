@@ -50,7 +50,7 @@
 
             const filename = `${subject_id}.csv`;
 
-            const condition_num = await jsPsychPipe.getCondition("mPKEI61T6MA6");
+            const condition_num = await jsPsychPipe.getCondition("1zsafE9wpbHe");
             // const condition_num = 0;
 
             scales = scale_list[condition_num];
@@ -76,7 +76,7 @@
                 type: jsPsychHtmlButtonResponse,
                 stimulus: 'Welcome to our experiment!' +
                     '<p>At the bottom of this screen, you will see a button that says "Begin Experiment".' +
-                    '<br>Please only click that button when you are ready to complete the 25 minute experiment in one sitting.</p>' +
+                    '<br>Please only click that button when you are ready to complete the 30 minute experiment in one sitting.</p>' +
                     '<p> Once you click that button, it will not be possible to restart the experiment.',
                 choices: ['Begin Experiment']
             }
@@ -137,7 +137,7 @@
             var overview_instructions = {
                 type: jsPsychHtmlButtonResponse,
                 stimulus: 'Welcome! <p> This experiment involves two parts: demographic information, followed by the experimental task.' +
-                    '<p> It will take about 25 minutes to complete both parts.',
+                    '<p> It will take about 30 minutes to complete both parts.',
                 choices: ['Continue']
             }
             timeline.push(overview_instructions);
@@ -423,7 +423,7 @@
             const save_data = {
                 type: jsPsychPipe,
                 action: "save",
-                experiment_id: "mPKEI61T6MA6",
+                experiment_id: "1zsafE9wpbHe",
                 filename: filename,
                 data_string: () => jsPsych.data.get().csv()
             };

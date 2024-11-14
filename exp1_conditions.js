@@ -1,26 +1,70 @@
+// var scale_list = {
+//   "0":["awful vs. nice", 
+//   "little vs. big", 
+//   "slow vs. fast",
+//   "sour vs. sweet",
+//   "powerless vs. poweful",
+//   "quiet vs. noisy"],
+//   "1":[
+//   "hellish vs. heavenly",
+//   "shallow vs. deep",
+//   "old vs. young",
+//   "bad vs. good",
+//   "weak vs. strong", 
+//   "dead vs. alive",
+//   ],
+//   "2":[
+//   "mild vs. harsh",
+//   "low vs. high",
+//   "unknown vs. known",
+//   "sad vs. happy",
+//   "short vs. long",
+//   "freezing vs. burning"
+//   ],
+// }
 var scale_list = {
-  "0":["awful vs. nice", 
-  "little vs. big", 
-  "slow vs. fast",
-  "sour vs. sweet",
-  "powerless vs. poweful",
-  "quiet vs. noisy"],
-  "1":[
-  "hellish vs. heavenly",
-  "shallow vs. deep",
-  "old vs. young",
-  "bad vs. good",
-  "weak vs. strong", 
-  "dead vs. alive",
-  ],
-  "2":[
-  "mild vs. harsh",
-  "low vs. high",
-  "unknown vs. known",
-  "sad vs. happy",
-  "short vs. long",
-  "freezing vs. burning"
-  ],
+"0":[
+"ugly vs. beautiful", 
+"yellow vs. blue",
+"hard vs. soft",
+"dirty vs. clean", 
+"agitated vs. calm", 
+"distasteful vs. tasty"],
+"1":[ 
+"worthless vs. valuable", 
+"red vs. green" ,
+"cruel vs. kind" ,
+"soft vs. loud" ,
+"unpleasant vs. pleasant", 
+"black vs. white" ],
+"2":[
+"bitter vs. sweet",
+"dull vs. sharp" ,
+"empty vs. full" ,
+"ferocious vs. peaceful",
+"light vs. heavy" ,
+"dry vs. wet" ],
+"3":[
+"profane vs. sacred" ,
+"tense vs. relaxed" ,
+"cowardly vs. brave" ,
+"poor vs. rich" ,
+"hazy vs. clear" ,
+"thin vs. thick" ],
+"4":[
+"dark vs. bright" ,
+"treble vs. bass" ,
+"rounded vs. angular", 
+"foul vs. fragrant" ,
+"passive vs. active" ,
+"smooth vs. rough" ],
+"5":[
+"stale vs. fresh" ,
+"unfair vs. fair" ,
+"delicate vs. rugged", 
+"bland vs. pungent" ,
+"sick vs. healthy" ,
+"narrow vs. wide"]
 }
 
 
